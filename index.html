@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+	<link rel="stylesheet" href="css/gh-bs.min.css">
+	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.css" />
+	<link rel="stylesheet" href="css/pushy.css">
+	<style>
+		.oo-state-screen-poster{background-image: url("img/vid-poster1A.jpg") !important;}
+		.oo-player-container {min-width: 100%;}
+		.oo-control-bar {visibility: hidden;}
+		.oo-player-container .oo-icon-play-slick{display: none;}
+		.oo-animate-pause { opacity: 1 !important}
+		.oo-spinner-wrapper { width: 20px;}
+		.oo-icon-system-replay { font-size: 20px;}
+		.oo-player-container .oo-start-screen .oo-start-screen-linear-gradient{background: transparent !important;}
+		.oo-fading-underlay { visibility:hidden;}
+		.oo-start-screen-linear-gradient { visibility:hidden;}
+
+		.pill {
+			background: #f5f5f5;
+			text-align: center;
+			padding: 10px;
+			color: #76a6ef;
+			font-size: .8em;
+			font-weight: bold;
+			border-radius: 25px;
+			margin-bottom: 1em;
+			letter-spacing: .5px;
+			text-transform: uppercase;
+			display: inline-block;
+		}
+
+		header {
+			padding-top: 1em;
+			padding-bottom: 1em;
+		}
+		header img {
+			/*width: 200px;*/
+		}
+		header .header-right {
+			margin-top: 5px;
+			float: right;
+		}
+		header .header-right a {
+			margin-top: 3px;
+		    color: #9f9e9f;
+		    display: inline-block;
+		}
+		header .header-right i.fa-phone {
+			margin-right: 10px;
+		}
+		header .header-right i.fa-bars {
+			margin-left: 20px;
+			font-size: 2em;
+			color: #5987cc;
+			cursor: pointer;
+		}
+		header .header-right i.fa-bars:hover,
+		header .header-right i.fa-bars:focus {
+			color: #426498;
+		}
+		#learn {
+			padding-top: 80px;
+		}
+		#learn h1 {
+			margin-bottom: 60px;
+			font-weight: 700;
+			color: #48555e;
+			text-transform: uppercase;
+		} 
+		#intro h1 {
+			color: #5987cc;
+			text-transform: uppercase;
+			margin-top: 40px;
+		}
+		#intro hr {
+			width: 50px;
+			display: inline-block;
+		}
+		#intro .playMobile {
+			background: #d7f741;
+			text-align: center;
+			padding: 18px 10px;
+			display: inline-block;
+			border-radius: 5px;
+			width: 100%;
+			margin: 20px auto;
+			color: #2f4360;
+			font-weight: bold;
+		}
+		#points {
+			font-size: 1.1em;
+			color: #48555e;
+		}
+		#points i {
+			color: #6a9ae3;
+			font-size: 1.9em;
+		}
+		#points .row {
+			margin-bottom: 40px;
+		}
+/*		#learn ul {
+			list-style-type: none;
+			padding-left: 0;
+		}
+		#learn ul>li {
+			margin-bottom: 4em;
+		}
+		#learn ul i {
+			margin-right: 40px;
+		}*/
+		#product {
+			background: url(img/bg-graph.jpg) no-repeat;
+			background-size: cover;
+			text-align: center;
+			padding: 2em 0;
+			color: #fff;
+		}
+		#product h2 {
+			text-transform: uppercase;
+			font-weight: 700;
+			/*margin-bottom: 1em;*/
+		}
+		#product h3 {
+			text-transform: uppercase;
+			font-weight: 300;
+			font-size: 1em;
+			letter-spacing: 1px;
+			margin-bottom: 2em;
+		}
+		#product p {
+			font-weight: 300;
+			margin: 0 60px 60px;
+		}
+		#statsDesktop {
+
+		}
+		#statsDesktop img, #statsDesktop span {
+			display: block;
+			text-align: center;
+			margin: 0 auto;
+		}
+		#statsDesktop img {
+			margin-bottom: 1em;
+		}
+		#statsDesktop span {
+			text-transform: uppercase;
+			margin-bottom: 2em;
+		}
+		#about {
+
+		}
+		#about .pill {
+			margin-top: 80px;
+			margin-bottom: 40px;
+		}
+		#about p {
+			line-height: 1.7;
+			margin-bottom: 40px;
+		}
+		#about h5 {
+			color: #76a6ef;
+		}
+		#about h6 {
+			margin-bottom: 20px;
+		}
+		footer {
+			background: #4e7fc8;
+			color: #fff;
+			padding-top: 2em;
+			padding-bottom: 4em;
+		}
+		footer nav {
+			margin-top: 1.5em;
+		}
+		footer a {
+			color: #fff;
+		}
+		footer nav>a {
+			margin-right: 1em;
+		}
+		footer p>a {
+			margin: 0 10px;
+		}
+		footer a:hover,
+		footer a:focus {
+			color: #f5f5f5;
+		}
+		footer p {
+			font-size: .9em;
+			font-weight: bold;
+		}
+		footer p:nth-of-type(1) {
+			color: #234476;
+		}
+
+
+		@media screen and (max-width: 1199px) {
+			#about .pill {
+				margin-top: 30px;
+				margin-bottom: 30px;
+			}
+		}
+
+		@media screen and (max-width: 991px) {
+			#about .sig {
+				margin-bottom: 20px;
+			}
+		}
+		@media screen and (max-width: 991px) and (min-width: 768px) {
+			#points .row {
+				margin-bottom: 10px;
+			}
+		}
+		@media screen and (max-width: 767px) {
+			footer nav {
+				float: none!important;
+				text-align: center;
+			}
+			footer img {
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+		@media screen and (max-width: 544px) {
+			.oo-state-screen-poster{background-image: url("img/mobile-vid-poster1.jpg") !important;}
+			#product p {
+				margin: 0 auto 60px;
+			}
+		}
+
+	</style>
+	<script src="//player.ooyala.com/static/v4/stable/latest/core.min.js"></script>
+	<script src="//player.ooyala.com/static/v4/stable/latest/video-plugin/main_html5.min.js"></script>
+	<script src="//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.js"></script>
+</head>
+<body>
+
+	<header>
+		<div class="container">
+			<img src="img/gundry-logo.png" alt="Gundry MD" class="img-fluid hidden-sm-down" width="200">
+			<img src="img/mobile-short-logo.png" alt="Gundry MD" class="img-fluid hidden-md-up">
+			<div class="header-right">
+				<i class="fa fa-bars menu-btn pull-right" aria-hidden="true"></i>
+				<a href="tel:1-800-852-0477" class="">
+					<i class="fa fa-phone" aria-hidden="true"></i>(800) 852-0477
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- Pushy Menu -->
+	<nav class="pushy pushy-left" data-focus="#first-link">
+	    <div class="pushy-content">
+	        <ul>
+	            <li class="pushy-link"><a href="#">Product</a></li>
+	            <li class="pushy-link"><a href="#">Terms</a></li>
+	            <li class="pushy-link"><a href="#">Privacy</a></li>
+	            <li class="pushy-link"><a href="#">About Us</a></li>
+	        </ul>
+	    </div>
+	</nav>
+	<div class="site-overlay"></div>
+
+
+	<main>
+		<div class="container">
+			<div id="video">
+			 	<script>
+			  	var playerParam = {
+					pcode: '42dWgyOq26LapmzP0dkDCzEhlyfW',
+					autoplay: false,
+					debug:false,
+					playerBrandingId: '1a4519374354edeb30fda41ce0a2b33',
+					skin: {
+						config: 'gundrymd.json'
+						}
+					};
+					OO.ready(function() {
+					// change the second parameter (embed code) to change the video 
+					window.pp = OO.Player.create('video', 'psb3MxYjE60BvDj0ahdnhctuTMNaaTo7', playerParam);});
+	         	</script>
+			</div>
+			<div id="intro" class="hidden-sm-up">
+				<h1>Three<br>Energy-Killing Foods</h1>
+				<hr>
+				<p>Find out how Dr. Gundry has helped his own patients gain natural, sustained energy by simply replenishing nutrients called polyphenols.</p>
+				<div class="playMobile"><img src="img/play-mobile.png" alt="play"> Play Video</div>
+			</div>
+		</div>
+	</main>
+
+
+
+	<div id="learn">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-md-6 hidden-sm-down">
+					<img src="img/gundry-stand.jpg" alt="Dr. Steven Gundry" class="img-fluid">
+				</div>
+				<div class="col-12 col-md-6">
+					<span class="pill">In This Video</span>
+					<h1>You Will Learn About</h1>
+					<div id="points">
+						<div class="row">
+							<div class="col-2">
+								<i class="fa fa-heartbeat" aria-hidden="true"></i>
+							</div>
+							<div class="col-10">
+								<p>The groundbreaking results of Dr. Gundry's landmark 2013 study presented to the American Heart Association.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-2">
+								<i class="fa fa-battery-quarter" aria-hidden="true"></i>
+							</div>
+							<div class="col-10">
+								<p>How a lack of key phytonutrients may be the reason for your low energy levels.</p>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-2">
+								<i class="fa fa-exclamation-triangle" aria-hidden="true"></i>
+							</div>
+							<div class="col-10">
+								<p>3 so-called "superfoods" to completely elimninate from your diet because they're actually terrible for your body.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 hidden-md-up">
+					<img src="img/gundry-stand-mobile.jpg" alt="Dr. Steven Gundry" class="img-fluid">
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+	<div id="product">
+		<div class="container">
+
+			<span class="pill">Revolutionary Formula</span>
+			<h2>Gundry MD - Prebiothrive</h2>
+			<h3>Concentrated Polyphenol Blend</h3>
+			<p>This revolutionary formula combines the power of 24 polyphenol-rich superfruits with natural fat burning ingredients and probiotics. Vital Reds is <strong>Soy-Free, Sugar-Free, Artificial Sweetener-Free</strong> and <strong>Lectin-Free</strong>.</p>
+			
+
+			<div id="statsDesktop" class="row">
+				<div class="col-12 col-sm-6 col-md-3">
+					<img src="img/run-round.png" alt="">
+					<span>Helps Boost Natural Energy</span>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<img src="img/digest-round.png" alt="">
+					<span>Promotes Improved Digestion</span>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<img src="img/woman-round.png" alt="">
+					<span>Helps Improve Skin Health &amp; Performance</span>
+				</div>
+				<div class="col-12 col-sm-6 col-md-3">
+					<img src="img/disolve-round.png" alt="">
+					<span>"Quick-Dissolve" Mix with a Great Taste</span>
+				</div>
+			</div>
+
+		</div>
+	</div>
+
+
+
+	<div id="about">
+		<div class="container">
+			<div class="row">
+				<div class="col-12 col-lg-5">
+					<span class="pill">About</span>
+					<p>Dr. Steven Gundry is one of the world's most celebrated surgeons and author of the best-selling book "Dr. Gundry's Diet Evolution." He is Director of the International Heart &amp; Lung Institute in Palm Springs, CA, and the founder of the Center for Restorative Medicine in Palm Springs &amp; in Santa Barbara, CA.</p>
+					<h5>Dr. Steven Gundry</h5>
+					<h6>Director of the International Heart &amp; Lung</h6>
+					<img src="img/gun-sign.png" class="sig" alt="Steven R. Gundry MD">
+				</div>
+				<div class="col-12 col-lg-7">
+					<img src="img/gun-back.jpg" alt="Dr. Steven Gundry" class="img-fluid">
+				</div>
+			</div>
+		</div>	
+	</div>
+
+
+
+	<footer>
+		<div class="container">
+			<img src="img/white-logo.png" alt="Gundry MD">
+			<nav class="pull-right">
+				<a href="secureOrder.php" target="_blank">Product</a>
+				<a href="terms.php" target="_blank">Terms</a>
+				<a href="privacy.php" target="_blank">Privacy</a>
+				<a href="about.php" target="_blank">About Us</a>
+			</nav>
+			<div class="clear"></div>
+			<hr>
+			<p class="text-center">THE INFORMATION ON THIS WEBSITE HAS NOT BEEN EVALUATED BY THE FOOD AND DRUG ADMINISTRATION. THESE PRODUCTS ARE NOT INTENDED TO DIAGNOSE, TREAT, CURE OR PREVENT ANY DISEASE.</p>
+			<p class="text-center">&copy; GUNDRY MD <script>document.write(new Date().getFullYear());</script>. ALL RIGHTS RESERVED. &nbsp; <a href="#">TERMS &amp; CONDITIONS</a> | <a href="#">PRIVACY POLICY</a></p>
+			<p class="text-center">9465 WILSHIRE BOULEVARD SUITE 300<br>BEVERLY HILLS, CALIFORNIA, 90212</p>
+		</div>
+	</footer>
+	<script
+	  src="//code.jquery.com/jquery-2.2.4.min.js"
+	  integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+	  crossorigin="anonymous"></script>
+	<script src="js/pushy.min.js"></script>
+	<script>
+		// play video and hide video button
+		$(".playMobile").click(function(){
+		  window.pp.play();
+		  $(this).hide('fast');
+		});
+	</script>
+</body>
+</html>
