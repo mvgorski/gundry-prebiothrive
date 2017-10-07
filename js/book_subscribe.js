@@ -1,120 +1,119 @@
-
 $(document).ready(function() {
 
 	// variable functions
 	var six_jar_sub = function() {
-		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=89c154fb041645d08b3a3929f576f9bf&brand=mbg&bn=1&clear=1");
-	        $(".reg-price").html("$419.70");
+		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=3ac8267aacfe4c2e9cb83e26a801329b&bn=1&clear=1");
+	        $(".reg-price").html("$474.00");
 	        $(".subInfo").html("PER MONTH");
-	        $(".inst-save").html("$189.75");
-	        $(".mem-save").html("$24.75");
-	        $(".big-price").html("$<span class='font45'>229.95</span></span>");
+	        $(".inst-save").html("$294.05");
+	        $(".mem-save").html("$19.05");
+	        $(".big-price").html("$<span class='font45'>179.95</span></span>");
 	        $(".ship").html("FREE");
 	 
 	}
 
 	var six_jar_sub_book = function() {
-		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=910f9a061b9b4ef6a89eb7541721910d&brand=mbg&bn=1&clear=1");
-		    $(".mem-save").html("$24.75");
-	        $(".reg-price").html("$419.70");
-	        $(".inst-save").html("$189.75");
+		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=bd648df641974f96bb634c916af2577d&bn=1&clear=1");
+		    //$(".mem-save").html("$24.75");
+	        $(".reg-price").html("$474.00");
+	        $(".inst-save").html("$294.05");
 	        $(".subInfo").html("+ $9.95 one time payment for book")
-	        $(".big-price").html("$<span class='font45'>229.95</span>");
+	        $(".big-price").html("$<span class='font45'>179.95</span>");
 	        $(".ship").html("FREE");
 	 
 	}
 
 	var three_jar_sub = function() {
-		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=6e2aaf7f141444c99ec67ac88050af3f&brand=mbg&bn=1&clear=1");
-	    	$(".reg-price").html("$209.85");
-	    	$(".inst-save").html("$87.90");
+		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=17f53685665444d695d3f78f8473a1f9&bn=1&clear=1");
+	    	$(".reg-price").html("$237.00");
+	    	$(".inst-save").html("$118.05");
 	    	$(".subInfo").html("PER MONTH");
-	    	$(".mem-save").html("$12.90");
-	    	$(".big-price").html("$<span class='font45'>121.95</span>");
+	    	$(".mem-save").html("$13.05");
+	    	$(".big-price").html("$<span class='font45'>118.95</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var three_jar_sub_book = function() {
-		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=b30edb9fadaa4b859feccfd35b91010a&brand=mbg&bn=1&clear=1");
-		    $(".mem-save").html("$12.90");
+		    $("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=c4728a8b0e444481b985549629c25bf1&bn=1&clear=1");
+		    // $(".mem-save").html("$12.90");
 		    $(".subInfo").html("+ $9.95 one time payment for book")
-	    	$(".reg-price").html("$209.85");
-	    	$(".inst-save").html("$87.90");
-	    	$(".big-price").html("$<span class='font45'>121.95</span>");
+	    	$(".reg-price").html("$237.00");
+	    	$(".inst-save").html("$118.05");
+	    	$(".big-price").html("$<span class='font45'>118.95</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var one_jar_sub = function() {
-	    	$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=17f8ce53ba6f489d992f063781db08a3&brand=mbg&bn=1&clear=1");
-	    	$(".reg-price").html("$69.95");
-	    	$(".inst-save").html("$25.00");
+	    	$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=0f02deade4954a26b34e2c6f28a60926&bn=1&clear=1");
+	    	$(".reg-price").html("$79.00");
+	    	$(".inst-save").html("$34.05");
 	    	$(".subInfo").html("PER MONTH");
-	    	$(".mem-save").html("$5.00");
+	    	$(".mem-save").html("$5.05");
 	    	$(".big-price").html("$<span class='font45'>44.95</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var one_jar_sub_book = function() {
-	    	$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=6874c76d8e054dce9f5057147fa61c97&brand=mbg&bn=1&clear=1");
-	    	$(".mem-save").html("$5.00");
+	    	$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=2727dc3ed1824c5b90cf63c1d069d32b&bn=1&clear=1");
+	    	//$(".mem-save").html("$5.05");
 	    	$(".subInfo").html("+ $9.95 one time payment for book")
-	    	$(".reg-price").html("$69.95");
-	    	$(".inst-save").html("$25.00");
+	    	$(".reg-price").html("$79.00");
+	    	$(".inst-save").html("$34.05");
 	    	$(".big-price").html("$<span class='font45'>44.95</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var six_jar_reg = function() {
-			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=656e41e6f59341f8a7a6d1f5cf3f930b&brand=mbg&bn=1&clear=1");
+			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=5c9ef8390d394683832a74247429b76b&bn=1&clear=1");
 			$(".subInfo").html("(This is a one time payment)")
-	    	$(".reg-price").html("$419.70");
-	    	$(".inst-save").html("$165.00");
-	    	$(".big-price").html("$<span class='font45'>254.70</span>");
+	    	$(".reg-price").html("$474.00");
+	    	$(".inst-save").html("$275.00");
+	    	$(".big-price").html("$<span class='font45'>199.00</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var six_jar_reg_book = function() {
-			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=cc00a60dccfc412e927499ad5d6dec9f&brand=mbg&bn=1&clear=1");
+			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=5efd1148e4f7484abb5ab2d9e067ce6a&bn=1&clear=1");
 			$(".subInfo").html("(This is a one time payment)")
-	    	$(".reg-price").html("$419.70");
-	    	$(".inst-save").html("$165.00");
-	    	$(".big-price").html("$<span class='font45'>264.65</span>");
+	    	$(".reg-price").html("$474.00");
+	    	$(".inst-save").html("$275.00");
+	    	$(".big-price").html("$<span class='font45'>208.95</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var three_jar_reg = function() {
-			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=b65b7894020743d08d2078e219c2bc69&brand=mbg&bn=1&clear=1");
+			$("#CTALink").attr("href", "http://silenceyourcravings.com/cmd.php?pid=dbee7a518200490a810e71660f51bd68&bn=1&clear=1");
 			$(".subInfo").html("(This is a one time payment)")
-	    	$(".reg-price").html("$209.85");
-	    	$(".inst-save").html("$75.00");
-	    	$(".big-price").html("$<span class='font45'>134.85</span>");
+	    	$(".reg-price").html("$237.00");
+	    	$(".inst-save").html("$105.00");
+	    	$(".big-price").html("$<span class='font45'>132.00</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var three_jar_reg_book = function() {
 			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=c1e30d5794474d25937c95846773d412&brand=mbg&bn=1&clear=1");
 			$(".subInfo").html("(This is a one time payment)")
-	    	$(".reg-price").html("$209.85");
-	    	$(".inst-save").html("$75.00");
-	    	$(".big-price").html("$<span class='font45'>144.80</span>");
+	    	$(".reg-price").html("$237.00");
+	    	$(".inst-save").html("$105.00");
+	    	$(".big-price").html("$<span class='font45'>141.95</span>");
 	    	$(".ship").html("FREE");
 	}
 
 	var one_jar_reg = function() {
-			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=b65727ce45d041778936d6a374ecda4f&brand=mbg&bn=1&clear=1");
+			$("#CTALink").attr("href", "http://silenceyourcravings.com/cmd.php?pid=97263673a78c455290b3afae678bef31&bn=1&clear=1");
 			$(".subInfo").html("(This is a one time payment)")
-	    	$(".reg-price").html("$69.95");
-	    	$(".inst-save").html("$20.00");
-	    	$(".big-price").html("$<span class='font45'>49.95</span>");
+	    	$(".reg-price").html("$79.00");
+	    	$(".inst-save").html("$29.01");
+	    	$(".big-price").html("$<span class='font45'>49.99</span>");
 	    	$(".ship").html("+$4.95");
 	}
 
 	var one_jar_reg_book = function() {
-			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=c5fac7bdd5da4d238855918ee3b98fb5&brand=mbg&bn=1&clear=1");
+			$("#CTALink").attr("href", "http://gundrymd.com/cmd.php?pid=9efb780ce0864fdb8a3a8dc6e9bffca1&bn=1&clear=1");
 			$(".subInfo").html("(This is a one time payment)")
-	    	$(".reg-price").html("$69.95");
-	    	$(".inst-save").html("$20.00");
-	    	$(".big-price").html("$<span class='font45'>59.90</span>");
+	    	$(".reg-price").html("$79.00");
+	    	$(".inst-save").html("$29.01");
+	    	$(".big-price").html("$<span class='font45'>59.94</span>");
 	    	$(".ship").html("+$4.95");
 	}
 
@@ -326,10 +325,26 @@ $(document).ready(function() {
 	})
 
 	// slow scroll
-		$("#bottom-button").click(function(e){
+		$("#bottom-button", ).click(function(e){
 		    e.preventDefault();
 		    $('html, body').animate({
 		     scrollTop: $("#scroll").offset().top
+		    }, 1000);
+	   });
+
+	// slow scroll
+		$(".about", ).click(function(e){
+		    e.preventDefault();
+		    $('html, body').animate({
+		     scrollTop: $("#about").offset().top
+		    }, 1000);
+	   });
+
+	// slow scroll
+		$(".product", ).click(function(e){
+		    e.preventDefault();
+		    $('html, body').animate({
+		     scrollTop: $("#bottle-section").offset().top
 		    }, 1000);
 	   });
 

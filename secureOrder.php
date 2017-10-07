@@ -1,4 +1,4 @@
- <?php
+<?php
   $tablet_browser = 0;
   $mobile_browser = 0;
   $httpUserAgent = empty($_SERVER['HTTP_USER_AGENT']) ? "" : $_SERVER['HTTP_USER_AGENT'];
@@ -42,7 +42,7 @@
 
   else if ($mobile_browser > 0) {
     // do something for mobile devices
-    header("Location: secureOrder_m.php");
+    header('Location: secureOrder_m.php');
   }
   else {
     // do something for everything else - Desktop or unknown
@@ -284,7 +284,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 					<div class="detail-div">
 						<div class="details-box">
 							<div class="box top-left-box">
-								<p><b>Regular Price: </b><br><span class="reg-price">$297</span></p>
+								<p><b>Regular Price: </b><br><span class="reg-price">$237</span></p>
 							</div>
 							<div class="box mem-box">
 								<p><b>Member Savings:</b><br>
@@ -293,7 +293,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							<div class="clear"></div>
 							<div class="box">
 								<p><b>Instant Savings</b><br>
-		  						<span class="inst-save">$168</span></p>
+		  						<span class="inst-save">$105</span></p>
 							</div>
 							<div class="box bottom-right-box">
 								<p><img src="img/truck-icon.png" alt=""> <b>Shipping</b><br>
@@ -301,9 +301,9 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 							</div>
 							<div class="clear"></div>
 							</div>
-							<p class="big-price">$<span class="font45">129</span></p>
+							<p class="big-price">$<span class="font45">132.00</span></p>
 							<p class="subInfo bold">(This is a one time payment)</p>
-							<a href="http://gundrymd.com/cmd.php?pid=b65b7894020743d08d2078e219c2bc69&brand=mbg&bn=1&clear=1" id="CTALink">
+							<a href="http://silenceyourcravings.com/cmd.php?pid=dbee7a518200490a810e71660f51bd68&bn=1&clear=1" id="CTALink" target="_blank">
 							<div class="CTA"><img src="img/blue-shop-cart.png" alt="" class="shop-cart"> <span class="arrow">Buy Now</span></div>
 							</a>
 					</div>
@@ -389,7 +389,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </script>
 		</div>
 		<div class="clear"></div>
-		<div class="about-section" id="about-section">
+		<div id="about" class="about-section" id="about-section">
 		<div class="about-div">
 			<p class="loose-text">Dr. Steven Gundry, MD is one of the world's most celebrated pediatric heart surgeons, and the author of the best-selling book "Dr. Gundry's Diet Evolution." He is the director of the International Heart &amp; Lung Institute in Palm Springs, CA, and the founder / director of the Center for Restorative Medicine in Palm Springs and Santa Barbara.</p>
 			<div class="sign-div">
@@ -449,8 +449,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
  <footer>
       <div class="container">
         <div class="links-div Fright">
-         <a href="#bottle-section">Product</a>
-         <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'terms2' , 'scrollbars=1,width=500,height=500')" href="terms.php" >Terms</a> <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'privacy2' , 'scrollbars=1,width=500,height=500')" href="privacy.php" >Privacy</a> <a href="secureOrder.php#doctorWrap" target="_BLANK">About Us</a>
+         <a class="product" href="#bottle-section">Product</a>
+         <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'terms2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/terms">Terms</a> <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'privacy2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/privacy">Privacy</a> <a class="about" href="#about">About Us</a>
         <p class="additionalInfo footerDivider">
         </div>
         <img src="img/white-logo.png" alt="" width="190">
@@ -458,8 +458,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <hr class="full-hr">
         <p class="info">The information on this website has not been evaluated by the Food and Drug Administration.<br> These products are not intended to diagnose, treat, cure or prevent any disease.</p>
         <p id="copyright" class="caps">&copy; Gundry MD 2017. All Rights Reserved 
-        <a target="_BLANK"onclick="return !window.open(this.href, 'terms2' , 'scrollbars=1,width=500,height=500')" href="terms.php" >Terms &amp; Conditions |</a>
-        <a target="_BLANK"onclick="return !window.open(this.href, 'privacy2' , 'scrollbars=1,width=500,height=500')" href="privacy.php" >Privacy Policy |</a>
+        <a target="_BLANK"onclick="return !window.open(this.href, 'terms2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/terms">Terms &amp; Conditions |</a>
+        <a target="_BLANK"onclick="return !window.open(this.href, 'privacy2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/privacy">Privacy Policy |</a>
           9465 Wilshire Boulevard, Suite 300 Beverly Hills, California, 90212</p>
       </div>
     </footer>
