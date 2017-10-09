@@ -3,11 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title></title>
+	<title>CutYourCravings.com</title>
 	<link rel="stylesheet" href="css/gh-bs.min.css">
 	<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" href="//player.ooyala.com/static/v4/stable/latest/skin-plugin/html5-skin.min.css" />
-	<link rel="stylesheet" href="css/pushy.css">
+	<link rel="stylesheet" href="css/pushy.min.css">
 	<style>
 		@font-face {
 		    font-family: 'proximanova-reg';
@@ -131,16 +131,6 @@
 		#points .row {
 			margin-bottom: 40px;
 		}
-/*		#learn ul {
-			list-style-type: none;
-			padding-left: 0;
-		}
-		#learn ul>li {
-			margin-bottom: 4em;
-		}
-		#learn ul i {
-			margin-right: 40px;
-		}*/
 		#product {
 			background: url(img/bg-graph.jpg) no-repeat;
 			background-size: cover;
@@ -178,9 +168,6 @@
 		#statsDesktop span {
 			text-transform: uppercase;
 			margin-bottom: 2em;
-		}
-		#about {
-
 		}
 		#about .pill {
 			margin-top: 80px;
@@ -225,7 +212,68 @@
 		footer p:nth-of-type(1) {
 			color: #234476;
 		}
-
+		.nextStep {
+			width: 100%; 
+			position: fixed; 
+			text-align: center; 
+			padding: 15px 0; 
+			bottom: 0; 
+			color: #fff; 
+			/*font-weight: bold;*/
+          	z-index: 100; 
+          	display: none;
+          	background: rgba(68,34,204,1);
+          	background: -moz-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
+		          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,34,204,1)), color-stop(19%, rgba(71,67,203,1)), color-stop(32%, rgba(78,125,200,1)), color-stop(68%, rgba(78,125,200,1)), color-stop(83%, rgba(71,67,203,1)), color-stop(100%, rgba(68,34,204,1)));
+		          background: -webkit-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
+		          background: -o-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
+		          background: -ms-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
+		          background: linear-gradient(to right, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
+		          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4422cc', endColorstr='#4422cc', GradientType=1 );}
+      	.next-text {
+      	    display: inline-block;
+      	    margin-right: 20px;
+  	    }
+  	    .nextStep .nextStepDesk {
+  	    	font-weight: bold;
+  	    }
+  	    .nextStep .nextStepDesk a {
+  	        background: #d7f741;
+  	        color: #4270b4;
+  	        text-align: center;
+  	        padding: 18px 10px;
+  	        width: 220px;
+  	        display: inline-block;
+  	        border-radius: 5px;
+  	        transition: all 0.5s;
+  	        position: relative;
+  	        cursor: pointer;
+  	    }
+  	    .nextStep .nextStepDesk a span:after {
+  	        content: '>';
+  	        position: absolute;
+  	        opacity: 0;
+  	        right: 40px;
+  	        transition: 0.5s;
+  	        font-size: 14px;
+  	        cursor: pointer;
+  	        vertical-align: middle;
+  	    }
+  	    .nextStep .nextStepDesk a:hover span {
+  	        padding-right: 25px;
+  	    }
+  	    .nextStep .nextStepDesk a:hover span:after {
+  	        opacity: 1;
+  	        right: 60px;
+  	    }
+  	    .nextStep .nextStepMob a {
+  	    	background: #d7f741;
+    	    color: #4270b4;
+    	    text-align: center;
+    	    padding: 18px 10px;
+    	    border-radius: 5px;
+    	    display: inline-block;
+  	    }
 
 		@media screen and (max-width: 1199px) {
 			#about .pill {
@@ -304,12 +352,11 @@
 	            <li class="pushy-link"><a href="" target="_blank" onclick="var ptr = window.open('http://gundrymd.com/privacy', 'Google', 'toolbar=no, directories=no, location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=640, height=500');
                 if(ptr) ptr.focus();
                 return false;">Privacy</a></li>
-	            <li class="pushy-link"><a href="secureOrder.php#about">About Us</a></li>
+	            <li class="pushy-link"><a href="secureOrder.php#about-section">About Us</a></li>
 	        </ul>
 	    </div>
 	</nav>
 	<div class="site-overlay"></div>
-
 
 	<main>
 		<div class="container">
@@ -337,8 +384,6 @@
 			</div>
 		</div>
 	</main>
-
-
 
 	<div id="learn">
 		<div class="container">
@@ -416,8 +461,6 @@
 		</div>
 	</div>
 
-
-
 	<div id="about">
 		<div class="container">
 			<div class="row">
@@ -436,7 +479,6 @@
 	</div>
 
 
-
 	<footer>
 		<div class="container">
 			<img src="img/white-logo.png" alt="Gundry MD">
@@ -448,7 +490,7 @@
 				<a href="" target="_blank" onclick="var ptr = window.open('http://gundrymd.com/privacy', 'Google', 'toolbar=no, directories=no, location=no, status=yes, menubar=no, resizable=no, scrollbars=yes, width=640, height=500');
                 if(ptr) ptr.focus();
                 return false;">Privacy</a>
-				<a href="secureOrder.php#about" target="_blank">About Us</a>
+				<a href="secureOrder.php#about-section" target="_blank">About Us</a>
 			</nav>
 			<div class="clear"></div>
 			<hr>
@@ -461,70 +503,7 @@
 			<p class="text-center">9465 WILSHIRE BOULEVARD SUITE 300<br>BEVERLY HILLS, CALIFORNIA, 90212</p>
 		</div>
 	</footer>
-	<style>
-		.nextStep {
-			width: 100%; 
-			position: fixed; 
-			text-align: center; 
-			padding: 15px 0; 
-			bottom: 0; 
-			color: #fff; 
-			/*font-weight: bold;*/
-          	z-index: 100; 
-          	display: none;
-          	background: rgba(68,34,204,1);
-          	background: -moz-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
-		          background: -webkit-gradient(left top, right top, color-stop(0%, rgba(68,34,204,1)), color-stop(19%, rgba(71,67,203,1)), color-stop(32%, rgba(78,125,200,1)), color-stop(68%, rgba(78,125,200,1)), color-stop(83%, rgba(71,67,203,1)), color-stop(100%, rgba(68,34,204,1)));
-		          background: -webkit-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
-		          background: -o-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
-		          background: -ms-linear-gradient(left, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
-		          background: linear-gradient(to right, rgba(68,34,204,1) 0%, rgba(71,67,203,1) 19%, rgba(78,125,200,1) 32%, rgba(78,125,200,1) 68%, rgba(71,67,203,1) 83%, rgba(68,34,204,1) 100%);
-		          filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4422cc', endColorstr='#4422cc', GradientType=1 );}
-      	.next-text {
-      	    display: inline-block;
-      	    margin-right: 20px;
-  	    }
-  	    .nextStep .nextStepDesk {
-  	    	font-weight: bold;
-  	    }
-  	    .nextStep .nextStepDesk a {
-  	        background: #d7f741;
-  	        color: #4270b4;
-  	        text-align: center;
-  	        padding: 18px 10px;
-  	        width: 220px;
-  	        display: inline-block;
-  	        border-radius: 5px;
-  	        transition: all 0.5s;
-  	        position: relative;
-  	        cursor: pointer;
-  	    }
-  	    .nextStep .nextStepDesk a span:after {
-  	        content: '>';
-  	        position: absolute;
-  	        opacity: 0;
-  	        right: 40px;
-  	        transition: 0.5s;
-  	        font-size: 14px;
-  	        cursor: pointer;
-  	        vertical-align: middle;
-  	    }
-  	    .nextStep .nextStepDesk a:hover span {
-  	        padding-right: 25px;
-  	    }
-  	    .nextStep .nextStepDesk a:hover span:after {
-  	        opacity: 1;
-  	        right: 60px;
-  	    }
-  	    .nextStep .nextStepMob a {
-  	    	background: #d7f741;
-    	    color: #4270b4;
-    	    text-align: center;
-    	    padding: 18px 10px;
-    	    border-radius: 5px;
-    	    display: inline-block;
-  	    }
-	</style>
+
 	<div class="nextStep">
 		<div class="nextStepDesk hidden-sm-down">
 			<span class="next-text">READY FOR A CHANGE?</span>

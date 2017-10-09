@@ -389,7 +389,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
               </script>
 		</div>
 		<div class="clear"></div>
-		<div id="about" class="about-section" id="about-section">
+		<div class="about-section" id="about-section">
 		<div class="about-div">
 			<p class="loose-text">Dr. Steven Gundry, MD is one of the world's most celebrated pediatric heart surgeons, and the author of the best-selling book "Dr. Gundry's Diet Evolution." He is the director of the International Heart &amp; Lung Institute in Palm Springs, CA, and the founder / director of the Center for Restorative Medicine in Palm Springs and Santa Barbara.</p>
 			<div class="sign-div">
@@ -450,7 +450,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <div class="container">
         <div class="links-div Fright">
          <a class="product" href="#bottle-section">Product</a>
-         <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'terms2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/terms">Terms</a> <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'privacy2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/privacy">Privacy</a> <a class="about" href="#about">About Us</a>
+         <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'terms2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/terms">Terms</a> <a target="_BLANK" class="additionalInfo clickable" onclick="return !window.open(this.href, 'privacy2' , 'scrollbars=1,width=500,height=500')" href="http://gundrymd.com/privacy">Privacy</a> <a class="about" href="#about-section">About Us</a>
         <p class="additionalInfo footerDivider">
         </div>
         <img src="img/white-logo.png" alt="" width="190">
